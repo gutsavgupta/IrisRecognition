@@ -1,4 +1,4 @@
-# Iris recognization using DCT & DWT as feature extraction
+# Iris recognition using DCT & DWT as feature extraction
 
 # Objective
 In this project we aim to recognize iris using DCT and DWT as methods for feature extraction. In the past, one of the common methods to recognize iris was through KLT (Karhunen-Loeve Transform) which was computationally heavy and it’s performance was not satisfactory in real time scenario. This project aims to target the same problem using
