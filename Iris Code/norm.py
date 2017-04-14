@@ -20,9 +20,12 @@ def get_circle(img, minR, maxR, p1, p2):
 def print_img(img,x,y,w,h):
 	if w!=0 and h!=0:
 		cv2.imshow('detected circles',img[x:x+w,y:y+h])
+		cv2.imwrite('app-1/1.jpg',img[x:x+w,y:y+h])
 	else:
 		cv2.imshow('detected circles',img)
+		cv2.imwrite('app-1/1.jpg',img)
 	cv2.waitKey(0)
+
 	cv2.destroyAllWindows()	
 
 def reject_out(img, xc, yc, r):
@@ -74,6 +77,6 @@ def extract_iris(img):
 
 	
 	
-img = cv2.imread('test5.jpg',0)
+img = cv2.imread('test7.jpg',0)
 img = cv2.medianBlur(img,5)
 extract_iris(img)
